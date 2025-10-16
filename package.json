@@ -1,7 +1,7 @@
 {
-  "name": "simple-chat",
+  "name": "secure-chat",
   "version": "1.0.0",
-  "description": "Простой чат на 3 файлах",
+  "description": "Простой чат с HTTPS и WSS",
   "main": "server.js",
   "type": "module",
   "scripts": {
