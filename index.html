@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Мини-чат HTTPS/WSS</title>
+<title>Мини-чат</title>
 <style>
 body{font-family:sans-serif;background:#101820;color:#eee;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0}
 #chat{width:400px;height:400px;border:1px solid #333;border-radius:10px;padding:10px;overflow-y:auto;background:#182030;margin-bottom:10px}
@@ -20,7 +20,7 @@ button:hover{background:#2563eb}
 </div>
 
 <script>
-const ws = new WebSocket(`wss://${location.host}`);
+const ws = new WebSocket(`ws://${location.host}`);
 const chat = document.getElementById('chat');
 const msg = document.getElementById('msg');
 const name = 'User-' + Math.floor(Math.random()*1000);
